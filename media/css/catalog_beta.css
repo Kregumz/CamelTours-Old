@@ -1,0 +1,136 @@
+.container {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  -moz-box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+  -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+  box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+  margin: 5px 5px 5px 0px;
+  overflow-y: hidden;
+}
+
+.image {
+  display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+.overlay {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0)); 
+  overflow: hidden !important;
+  width: 100%;
+  height: 60%;
+  transition: .5s ease;
+  display: flex;
+  align-items: flex-end;
+  transform: translate(0px, 40px);
+}
+
+.container:hover .overlay {
+  height: 60%;
+  transform: translate(0px, 0px);
+}
+
+.text {
+  white-space: wrap; 
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  padding: 0 10px 10px 10px;
+  line-height: 1.2;
+}
+
+.tour {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+    margin-bottom: -15px;
+   font-size: 15px; 
+   font-style: italic; 
+   font-weight: bold
+}
+.creator {font-size: 15px;}
+
+.discover {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(50,120,255,0.5);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  height: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px 0px 0px 0px;
+}
+
+.discover span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.discover span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 20px;
+  transition: 0.5s;
+}
+
+.discover:hover span {
+  padding-right: 12px;
+  color: #FFFFFF;
+}
+
+.discover:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #FFFFFF;
+}
+
+#catalog{
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+}
+#mapHolder{
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    padding: 5px 5px 20px 5px;
+}
+.info{
+    text-align: left;
+    padding: 5px 0px 0px 10px;
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 5;
+}
+.link{
+    text-align: left;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+}
+img{
+    float:left;
+}

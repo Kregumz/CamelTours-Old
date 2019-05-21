@@ -1,0 +1,52 @@
+html, body {
+  height: 100%; }
+
+html {
+  overflow-y: scroll; }
+
+body {
+  background-color: #E8F0FF; }
+
+fieldset {
+  border: solid 1px #C8CEDB;
+  padding: 2.50rem;
+  margin: 1.125rem 0; }
+
+button.small, .button.small, {
+  font-size: 0.9375rem; }
+
+button.tiny, .button.tiny {
+  font-size: 0.875rem }
+
+.top-bar .name h1 a {
+  font-family: "Trebuchet MS",Arial,sans-serif;
+  font-weight: bold; }
+
+.top-bar .name h1 a span {
+  font-size: 0.9375rem; }
+
+.top-bar-spacer {
+  height: 15px; }
+
+.thumb-holder {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  margin-bottom: 10px; }
+
+.thumb-caption {
+  float: left !important;
+  position: absolute;
+  max-width: 90px;
+  max-height: 90px;
+  top: 8px;
+  left: 8px;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  word-wrap: break-word; }
+
+.accordion dd > a {
+  background: #BACCC4; }
+
+.accordion dd > a:hover {
+  background: #ADBFB7; }
